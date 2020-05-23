@@ -13,7 +13,7 @@ const calcChildren = (n) => {
 const totalGreenfly = (n) => {
   var total = 1;
   for (let i = 1; i < n + 1; i++) {
-    total += calcChildren(i);
+    total = total + calcChildren(i);
     console.log(
       `Day ${i}:  Parents: ${calcParents(i)}  Children: ${calcChildren(
         i
@@ -23,6 +23,6 @@ const totalGreenfly = (n) => {
   return total;
 };
 
-console.log(totalGreenfly(28));
-console.log(calcChildren(28));
-console.log(calcParents(28));
+totalGreenfly(28);
+// console.log(calcChildren(28));
+// console.log(calcParents(28));
