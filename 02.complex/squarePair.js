@@ -8,7 +8,7 @@ const squarePair = (n) => {
       squareRoot = Math.sqrt(sum);
       if (Number.isInteger(squareRoot) == true) {
         if (n[i] < n[j]) {
-          console.log('Square Pairs:', n[i], n[j]);
+          console.log('Square Pairs:', new Array(n[i], n[j]));
         }
       }
     }
